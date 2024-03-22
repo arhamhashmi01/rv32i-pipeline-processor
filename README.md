@@ -56,11 +56,11 @@ To begin exploring the RV32I 5-Stage Pipeline Processor:
 
   **1)** Clone this repository to your local machine:
 
-    git clone https://github.com/your_username/rv32i-5stage-pipeline.git
+     git clone https://github.com/arhamhashmi01/rv32i-pipeline-processor.git
 
   **2)** Navigate to the project directory:
 
-    cd rv32i-5stage-pipeline
+     cd rv32i-5stage-pipeline
 
   **3)** Refer to the documentation provided in the repository to build, simulate, or test the processor implementation.
 
