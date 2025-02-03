@@ -1,5 +1,6 @@
 module memory_pipe(
   input wire clk,
+  input wire rst,
   input wire reg_write_in,
   input wire [1:0]  mem_reg_in,
   input wire [31:0] wrap_load_in,
@@ -23,13 +24,24 @@ module memory_pipe(
   reg [31:0] alu_result , nextsel_addr , wrap_load , instruction;
 
   always @ (posedge clk) begin
-    mem_reg        <= mem_reg_in;
-    alu_result     <= alu_res;
-    nextsel_addr   <= next_sel_addr;
-    wrap_load      <= wrap_load_in;
-    instruction    <= instruction_in;
-    reg_write      <= reg_write_in;
-    pre_address_pc <= pre_address_in;
+    if (!rst) begin
+      mem_reg        <= 0;
+      alu_result     <= 0;
+      nextsel_addr   <= 0;
+      wrap_load      <= 0;
+      instruction    <= 0;
+      reg_write      <= 0;
+      pre_address_pc <= 0;
+    end
+    else begin
+      mem_reg        <= mem_reg_in;
+      alu_result     <= alu_res;
+      nextsel_addr   <= next_sel_addr;
+      wrap_load      <= wrap_load_in;
+      instruction    <= instruction_in;
+      reg_write      <= reg_write_in;
+      pre_address_pc <= pre_address_in;
+    end
   end
 
   assign reg_write_out    = reg_write;
