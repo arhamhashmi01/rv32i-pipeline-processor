@@ -4,7 +4,7 @@ module microprocessor_tb();
     reg [31:0]instruction;
     reg rst;
 
-    wire[31:0] res_out;
+ 
 
     microprocessor u_microprocessor0
     (

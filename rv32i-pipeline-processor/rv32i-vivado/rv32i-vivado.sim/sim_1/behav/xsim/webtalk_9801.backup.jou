@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 19 16:49:24 2025
+# Process ID: 9801
+# Current directory: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/xsim.dir/microprocessor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/xsim.dir/microprocessor_tb_behav/webtalk/xsim_webtalk.tcl -notrace

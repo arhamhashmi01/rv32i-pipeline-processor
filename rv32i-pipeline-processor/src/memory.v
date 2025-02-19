@@ -15,7 +15,7 @@ module memory#(
 
     initial begin
         if (INIT_MEM)
-            $readmemh("tb/instr.mem",mem);
+            $readmemh("/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/instr.mem",mem);
     end
 
     always @(posedge clk) begin

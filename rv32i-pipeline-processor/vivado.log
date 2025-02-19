@@ -1,0 +1,597 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 19 16:41:26 2025
+# Process ID: 4692
+# Current directory: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor
+# Command line: vivado
+# Log file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/vivado.log
+# Journal file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project rv32i-vivado /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/merledu1/Documents/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 6166.902 ; gain = 58.625 ; free physical = 72784 ; free virtual = 197723
+add_files {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2458] undeclared symbol jalr_execute, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:56]
+INFO: [VRFC 10-2458] undeclared symbol reg_write_wb, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_back
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediategen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module type_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrappermem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" Line 1. Module microprocessor doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" Line 1. Module instruc_mem_top(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" Line 1. Module fetch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" Line 1. Module pc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" Line 1. Module fetch_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" Line 1. Module decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" Line 1. Module controlunit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" Line 1. Module type_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" Line 1. Module control_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" Line 1. Module immediategen doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" Line 1. Module mux3_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" Line 1. Module registerfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" Line 1. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" Line 1. Module decode_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" Line 1. Module execute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" Line 1. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" Line 1. Module execute_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" Line 1. Module memory_stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" Line 1. Module wrappermem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" Line 1. Module memory_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" Line 1. Module write_back doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" Line 1. Module mux2_4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" Line 1. Module data_mem_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory(INIT_MEM=1)
+Compiling module xil_defaultlib.instruc_mem_top(INIT_MEM=1)
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.fetch_pipe
+Compiling module xil_defaultlib.type_decoder
+Compiling module xil_defaultlib.control_decoder
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.immediategen
+Compiling module xil_defaultlib.mux3_8
+Compiling module xil_defaultlib.registerfile
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.decode_pipe
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.execute_pipe
+Compiling module xil_defaultlib.wrappermem
+Compiling module xil_defaultlib.memory_stage
+Compiling module xil_defaultlib.memory_pipe
+Compiling module xil_defaultlib.mux2_4
+Compiling module xil_defaultlib.write_back
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.data_mem_top
+Compiling module xil_defaultlib.microprocessor
+Compiling module xil_defaultlib.microprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot microprocessor_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim/xsim.dir/microprocessor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 19 16:49:24 2025...
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 6280.582 ; gain = 0.000 ; free physical = 72675 ; free virtual = 197737
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "microprocessor_tb_behav -key {Behavioral:sim_1:Functional:microprocessor_tb} -tclbatch {microprocessor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source microprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File tb/instr.mem referenced on /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'microprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 6359.156 ; gain = 78.574 ; free physical = 72597 ; free virtual = 197665
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6362.344 ; gain = 0.000 ; free physical = 72591 ; free virtual = 197658
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: File tb/instr.mem referenced on /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v at line 18 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+relaunch_sim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 6369.344 ; gain = 7.000 ; free physical = 72602 ; free virtual = 197670
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg
+set_property xsim.view /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2458] undeclared symbol jalr_execute, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:56]
+INFO: [VRFC 10-2458] undeclared symbol reg_write_wb, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_back
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediategen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module type_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrappermem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" Line 1. Module microprocessor doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" Line 1. Module instruc_mem_top(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" Line 1. Module fetch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" Line 1. Module pc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" Line 1. Module fetch_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" Line 1. Module decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" Line 1. Module controlunit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" Line 1. Module type_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" Line 1. Module control_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" Line 1. Module immediategen doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" Line 1. Module mux3_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" Line 1. Module registerfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" Line 1. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" Line 1. Module decode_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" Line 1. Module execute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" Line 1. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" Line 1. Module execute_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" Line 1. Module memory_stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" Line 1. Module wrappermem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" Line 1. Module memory_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" Line 1. Module write_back doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" Line 1. Module mux2_4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" Line 1. Module data_mem_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory(INIT_MEM=1)
+Compiling module xil_defaultlib.instruc_mem_top(INIT_MEM=1)
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.fetch_pipe
+Compiling module xil_defaultlib.type_decoder
+Compiling module xil_defaultlib.control_decoder
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.immediategen
+Compiling module xil_defaultlib.mux3_8
+Compiling module xil_defaultlib.registerfile
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.decode_pipe
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.execute_pipe
+Compiling module xil_defaultlib.wrappermem
+Compiling module xil_defaultlib.memory_stage
+Compiling module xil_defaultlib.memory_pipe
+Compiling module xil_defaultlib.mux2_4
+Compiling module xil_defaultlib.write_back
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.data_mem_top
+Compiling module xil_defaultlib.microprocessor
+Compiling module xil_defaultlib.microprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot microprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "microprocessor_tb_behav -key {Behavioral:sim_1:Functional:microprocessor_tb} -tclbatch {microprocessor_tb.tcl} -view {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg
+source microprocessor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'microprocessor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6391.359 ; gain = 5.992 ; free physical = 72528 ; free virtual = 197599
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 6393.359 ; gain = 0.000 ; free physical = 72564 ; free virtual = 197637
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2458] undeclared symbol jalr_execute, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:56]
+INFO: [VRFC 10-2458] undeclared symbol reg_write_wb, assumed default net type wire [/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_back
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immediategen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module type_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrappermem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v" Line 1. Module microprocessor doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v" Line 1. Module instruc_mem_top(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory(INIT_MEM=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v" Line 1. Module core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v" Line 1. Module fetch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v" Line 1. Module pc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v" Line 1. Module fetch_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v" Line 1. Module decode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v" Line 1. Module controlunit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v" Line 1. Module type_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v" Line 1. Module control_decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v" Line 1. Module immediategen doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v" Line 1. Module mux3_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v" Line 1. Module registerfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v" Line 1. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v" Line 1. Module decode_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v" Line 1. Module execute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v" Line 1. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v" Line 1. Module execute_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v" Line 1. Module memory_stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v" Line 1. Module wrappermem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v" Line 1. Module memory_pipe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v" Line 1. Module write_back doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v" Line 1. Module mux2_4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v" Line 1. Module data_mem_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v" Line 1. Module memory doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory(INIT_MEM=1)
+Compiling module xil_defaultlib.instruc_mem_top(INIT_MEM=1)
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.fetch_pipe
+Compiling module xil_defaultlib.type_decoder
+Compiling module xil_defaultlib.control_decoder
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.immediategen
+Compiling module xil_defaultlib.mux3_8
+Compiling module xil_defaultlib.registerfile
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.decode_pipe
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.execute_pipe
+Compiling module xil_defaultlib.wrappermem
+Compiling module xil_defaultlib.memory_stage
+Compiling module xil_defaultlib.memory_pipe
+Compiling module xil_defaultlib.mux2_4
+Compiling module xil_defaultlib.write_back
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.data_mem_top
+Compiling module xil_defaultlib.microprocessor
+Compiling module xil_defaultlib.microprocessor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot microprocessor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6403.359 ; gain = 0.000 ; free physical = 72515 ; free virtual = 197588
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'microprocessor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj microprocessor_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/rv32i-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto e2836db11f674e4a9b4023c42b372253 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot microprocessor_tb_behav xil_defaultlib.microprocessor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: Could not open VCD file temp/microprocessor.vcd for writing.
+$finish called at time : 360 ns : File "/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v" Line 27
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 6403.359 ; gain = 0.000 ; free physical = 72498 ; free virtual = 197571
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}

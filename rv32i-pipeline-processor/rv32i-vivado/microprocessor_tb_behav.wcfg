@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="microprocessor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="microprocessor_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="360000001fs"></ZoomEndTime>
+      <Cursor1Time time="360000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="218"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="logic" fp_name="/microprocessor_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/pre_pc_addr_fetch">
+      <obj_property name="ElementShortName">pre_pc_addr_fetch[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_pc_addr_fetch[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/instruction_fetch">
+      <obj_property name="ElementShortName">instruction_fetch[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_fetch[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/pre_pc_addr_decode">
+      <obj_property name="ElementShortName">pre_pc_addr_decode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_pc_addr_decode[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/instruction_decode">
+      <obj_property name="ElementShortName">instruction_decode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_decode[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/pre_pc_addr_execute">
+      <obj_property name="ElementShortName">pre_pc_addr_execute[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_pc_addr_execute[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/instruction_execute">
+      <obj_property name="ElementShortName">instruction_execute[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_execute[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_executestage/u_alu0/a_i">
+      <obj_property name="ElementShortName">a_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_executestage/u_alu0/b_i">
+      <obj_property name="ElementShortName">b_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_executestage/u_alu0/res_o">
+      <obj_property name="ElementShortName">res_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_o[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/pre_pc_addr_memstage">
+      <obj_property name="ElementShortName">pre_pc_addr_memstage[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_pc_addr_memstage[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/instruction_memstage">
+      <obj_property name="ElementShortName">instruction_memstage[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_memstage[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_memorystage/store">
+      <obj_property name="ElementShortName">store</obj_property>
+      <obj_property name="ObjectShortName">store</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_memorystage/load">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/u_microprocessor0/u_data_memory/u_memory/request">
+      <obj_property name="ElementShortName">request</obj_property>
+      <obj_property name="ObjectShortName">request</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/u_microprocessor0/u_data_memory/u_memory/we_re">
+      <obj_property name="ElementShortName">we_re</obj_property>
+      <obj_property name="ObjectShortName">we_re</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_data_memory/u_memory/address">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_data_memory/u_memory/data_in">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_data_memory/u_memory/data_out">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/pre_pc_addr_wb">
+      <obj_property name="ElementShortName">pre_pc_addr_wb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_pc_addr_wb[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/instruction_wb">
+      <obj_property name="ElementShortName">instruction_wb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_wb[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_decodestage/u_regfile0/rd">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_decodestage/u_regfile0/en">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/microprocessor_tb/u_microprocessor0/u_core/u_decodestage/u_regfile0/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

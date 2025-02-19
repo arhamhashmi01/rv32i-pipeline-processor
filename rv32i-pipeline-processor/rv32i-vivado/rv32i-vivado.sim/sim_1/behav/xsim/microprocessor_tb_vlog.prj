@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../src/Core.v" \
+"../../../../../src/Decode.v" \
+"../../../../../src/Execute.v" \
+"../../../../../src/Fetch.v" \
+"../../../../../src/Memory.v" \
+"../../../../../src/Microprocessor.v" \
+"../../../../../src/Write_back.v" \
+"../../../../../src/adder.v" \
+"../../../../../src/alu.v" \
+"../../../../../src/branch.v" \
+"../../../../../src/control_decoder.v" \
+"../../../../../src/control_unit.v" \
+"../../../../../src/data_memory_top.v" \
+"../../../../../src/decode_pipe.v" \
+"../../../../../src/execute_pipe.v" \
+"../../../../../src/fetch_pipe.v" \
+"../../../../../src/immediate_gen.v" \
+"../../../../../src/instruc_mem_top.v" \
+"../../../../../src/memory.v" \
+"../../../../../src/memstage_pipe.v" \
+"../../../../../src/mux1_2.v" \
+"../../../../../src/mux2_4.v" \
+"../../../../../src/mux3_8.v" \
+"../../../../../src/program_counter.v" \
+"../../../../../src/register_file.v" \
+"../../../../../src/type_decoder.v" \
+"../../../../../src/wrapper_memory.v" \
+"../../../../../tb/Microprocessor_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -16,7 +16,7 @@ module registerfile (
 
     always @(posedge clk or negedge rst) begin
         if(!rst)begin
-            for (i=0; i<32; i++) begin
+            for (i=0; i<32; i=i+1) begin
                 register[i] <= 32'b0;
             end
         end

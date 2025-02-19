@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 19 16:41:26 2025
+# Process ID: 4692
+# Current directory: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor
+# Command line: vivado
+# Log file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/vivado.log
+# Journal file: /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project rv32i-vivado /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado -part xc7vx485tffg1157-1
+add_files {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_unit.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/branch.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/program_counter.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/data_memory_top.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Decode.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/execute_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux1_2.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/register_file.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/alu.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/type_decoder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Write_back.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Core.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/wrapper_memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Fetch.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/fetch_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/control_decoder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux2_4.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Execute.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memory.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/Microprocessor.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/memstage_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/adder.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/immediate_gen.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/decode_pipe.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/mux3_8.v /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/src/instruc_mem_top.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/tb/Microprocessor_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source microprocessor_tb.tcl
+relaunch_sim
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg
+set_property xsim.view /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config /home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg
+source microprocessor_tb.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
+save_wave_config {/home/sarham/rv32i-pipeline-processor/rv32i-pipeline-processor/rv32i-vivado/microprocessor_tb_behav.wcfg}
